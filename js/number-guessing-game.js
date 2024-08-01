@@ -9,6 +9,7 @@ function runGame() {
     do {
         guessString = prompt("I am thinking of a number in the range of 1 to 100.\n\nWhat is the number?");
         if (guessString === null) {
+            alert("You're giving up already?");
             return
         }
         guessNumber = +guessString;
